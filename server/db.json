@@ -1,0 +1,45 @@
+{
+  "student": [
+    {
+      "studentId": "2323",
+      "studentName": "ffdffddff",
+      "id": "H7L0Y02LPKU"
+    },
+    {
+      "studentId": "1",
+      "studentName": "eeeeeee",
+      "id": "DEmdRoU29Qc"
+    },
+    {
+      "studentId": "1",
+      "studentName": "3etetet",
+      "id": "fw4bomnHzc0"
+    },
+    {
+      "studentId": "1",
+      "studentName": "gwrt",
+      "id": "0fPpeJkk0mI"
+    },
+    {
+      "studentId": "1",
+      "studentName": "3eee",
+      "id": "RQ0ecYRctMI"
+    },
+    {
+      "id": "whGCBuyA7Go",
+      "rollno": "1",
+      "name": "Tharnish"
+    },
+    {
+      "id": "-HVEyPCvrrI",
+      "rollno": "1",
+      "name": "Tharnish"
+    },
+    {
+      "id": "_GyECYiqQqo",
+      "rollno": "1",
+      "name": "Tharnish00000001"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
