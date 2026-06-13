@@ -1,44 +1,29 @@
 {
   "student": [
     {
-      "studentId": "2323",
-      "studentName": "ffdffddff",
-      "id": "H7L0Y02LPKU"
-    },
-    {
-      "studentId": "1",
-      "studentName": "eeeeeee",
-      "id": "DEmdRoU29Qc"
-    },
-    {
-      "studentId": "1",
-      "studentName": "3etetet",
-      "id": "fw4bomnHzc0"
-    },
-    {
-      "studentId": "1",
-      "studentName": "gwrt",
-      "id": "0fPpeJkk0mI"
-    },
-    {
-      "studentId": "1",
-      "studentName": "3eee",
-      "id": "RQ0ecYRctMI"
-    },
-    {
-      "id": "whGCBuyA7Go",
+      "id": "kSzBv4SneTg",
       "rollno": "1",
       "name": "Tharnish"
     },
     {
-      "id": "-HVEyPCvrrI",
-      "rollno": "1",
-      "name": "Tharnish"
+      "rollno": "2",
+      "name": "Tharnish",
+      "id": "3fzRLGGLLFI"
     },
     {
-      "id": "_GyECYiqQqo",
-      "rollno": "1",
-      "name": "Tharnish00000001"
+      "rollno": "3",
+      "name": "Tharnish",
+      "id": "7Za272x2Yl8"
+    },
+    {
+      "rollno": "4",
+      "name": "Tharnish",
+      "id": "vZmIo45_E3A"
+    },
+    {
+      "rollno": "5",
+      "name": "Tharnish",
+      "id": "Z-OEDdCL3ZQ"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

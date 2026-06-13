@@ -1,0 +1,15 @@
+.blue{
+    color:#e3f2fd !important ;  
+}
+.student-footer{
+    background-color:rgb(38, 125, 255) !important; 
+} 
+
+.card{
+    cursor: pointer;
+}
+
+.required{
+    color: red;
+}
+
