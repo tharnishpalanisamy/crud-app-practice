@@ -1,29 +1,8 @@
 {
   "student": [
     {
-      "rollno": "14",
-      "name": "Sanjay",
-      "studentClass": "I",
-      "section": "A",
-      "id": "s1"
-    },
-    {
-      "rollno": "3",
-      "name": "Farhan",
-      "studentClass": "II",
-      "section": "B",
-      "id": "s2"
-    },
-    {
-      "rollno": "19",
-      "name": "Bala",
-      "studentClass": "III",
-      "section": "C",
-      "id": "s3"
-    },
-    {
       "rollno": "7",
-      "name": "Hari",
+      "name": "Hari Haran",
       "studentClass": "IV",
       "section": "A",
       "id": "s4"
@@ -58,8 +37,8 @@
     },
     {
       "rollno": "12",
-      "name": "Arun",
-      "studentClass": "IX",
+      "name": "Arunodhayan",
+      "studentClass": "I",
       "section": "C",
       "id": "s9"
     },
@@ -141,18 +120,67 @@
       "id": "s20"
     },
     {
-      "rollno": "21",
-      "name": "Tharnish",
-      "studentClass": "I",
-      "section": "A",
-      "id": "OPIWVCZ23mk"
-    },
-    {
-      "rollno": "22",
+      "rollno": "23",
       "name": "Tharnish",
       "studentClass": "II",
       "section": "A",
-      "id": "mXH2vSeOUw0"
+      "id": "DRxMKcyWbJM"
+    },
+    {
+      "rollno": "21",
+      "name": "Tharnish",
+      "studentClass": "II",
+      "section": "A",
+      "id": "7eIC8IX-Tuc"
+    },
+    {
+      "rollno": "210",
+      "name": "Tharnish",
+      "studentClass": "II",
+      "section": "A",
+      "id": "gqda3Xzldnk"
+    },
+    {
+      "rollno": "2102",
+      "name": "Tharnish",
+      "studentClass": "II",
+      "section": "A",
+      "id": "WiVkx1fjJKk"
+    },
+    {
+      "rollno": "21021",
+      "name": "Tharnish",
+      "studentClass": "II",
+      "section": "A",
+      "id": "gqLVu5yNngU"
+    },
+    {
+      "rollno": "72",
+      "name": "Bda",
+      "studentClass": "III",
+      "section": "A",
+      "id": "EG5D0qCKuQY"
+    },
+    {
+      "rollno": "411",
+      "name": "Tharnish",
+      "studentClass": "II",
+      "section": "A",
+      "id": "j_INiS9pu70"
+    },
+    {
+      "rollno": "210212",
+      "name": "Tharnish",
+      "studentClass": "I",
+      "section": "A",
+      "id": "k3awfypPSzE"
+    },
+    {
+      "rollno": "4323",
+      "name": "Tharnish",
+      "studentClass": "I",
+      "section": "A",
+      "id": "7PBDmoeAOTI"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

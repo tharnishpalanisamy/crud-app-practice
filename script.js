@@ -12,10 +12,10 @@ displayStudents()
 let addStudentBtn = document.getElementById('addStudent') 
 
 addStudentBtn.addEventListener('click' , async function(e){ 
-    let rollno = document.getElementById('rollno').value
-    let name = document.getElementById('name').value 
-    let studentClass = document.getElementById('studentClass').value
-    let section = document.getElementById('studentSection').value
+    let rollno = document.getElementById('rollno')
+    let name = document.getElementById('name') 
+    let studentClass = document.getElementById('studentClass')
+    let section = document.getElementById('studentSection')
 
     if(!rollno || !name) {
         alert("cannot be empty") 
@@ -33,10 +33,10 @@ addStudentBtn.addEventListener('click' , async function(e){
     }
 
     let student = {
-        rollno : rollno , 
-        name : name  , 
-        studentClass:studentClass , 
-        section:section 
+        rollno : rollno.value , 
+        name : name.value  , 
+        studentClass:studentClass.value , 
+        section:section.value 
     }
 
     await fetch(API , {
@@ -46,8 +46,17 @@ addStudentBtn.addEventListener('click' , async function(e){
         },
         body:JSON.stringify(student)
     })
-    // await displayStudents()
+    await displayStudents()
 
+
+    //hide 
+    rollno.value = "" 
+    name.value = ""
+    studentClass.value = "" 
+    section.value = ""
+    let modalElement = document.getElementById('addStudentModal') 
+    let modal = bootstrap.Modal.getInstance(modalElement) 
+    modal.hide()
 })
 
 //create student 
@@ -77,8 +86,8 @@ function createStudents(students) {
             <td>${student.name}</td>
             <td>${student.studentClass}</td>
             <td>${student.section}</td>
-            <td><i class="fa-regular fa-pen-to-square fa-lg me-4 text-warning editBtn" data-id="${student.rollno}" data-bs-toggle="modal" data-bs-target="#editStudent"></i>
-            <i class="fa-solid fa-trash fa-lg text-danger deleteBtn" data-id="${student.rollno}"></i></td>
+            <td><i class="fa-regular fa-pen-to-square fa-lg me-4 text-warning editBtn" data-id="${student.id}" data-bs-toggle="modal" data-bs-target="#editStudent"></i>
+            <i class="fa-solid fa-trash fa-lg text-danger deleteBtn" data-id="${student.id}"></i></td>
              
         </tr>
         
@@ -284,7 +293,7 @@ filterButton.addEventListener('click' , async function(){
     } 
     else if (rollnoDescFilter) {
         filteredStudents.sort((a,b)=>{
-            if(a.rollno > b.rollno) return -1 
+            if(Number(a.rollno) > Number(b.rollno)) return -1 
             else return 1 
     }) 
 
@@ -363,21 +372,17 @@ allStudentsBtn.disabled = false
 
 document.addEventListener('click' , async function(event){
     if(event.target.classList.contains('editBtn')) {
-        // console.log(event.target.dataset.id);
-        console.log("dataset id:", event.target.dataset.id)
         let ID = event.target.dataset.id
-        let studentsData = await fetch(`${API}`) 
+        let studentsData = await fetch(`${API}/${ID}`) 
         console.log(studentsData);
-        
-        let students =  await studentsData.json()  
-        console.log(students);
-        
 
-        let student = students.find(s => s.rollno == `${ID.trim()}`)
-        console.log('student' , student);
+        let student =  await studentsData.json()  
+        console.log(student);
+
         
         let editRollno = document.getElementById('editRollno')  
         editRollno.value = student.rollno  
+        editRollno.disabled = true 
 
         let editName = document.getElementById('editName') 
         editName.value = student.name 
@@ -389,10 +394,41 @@ document.addEventListener('click' , async function(event){
         studentSection.value = student.section 
 
 
+
+
+        console.log(editName.value);
+        
+        //hide modal 
+        document.querySelector('.saveBtn').addEventListener('click' , async function(){
+
+            let updateStudent = {
+                rollno : editRollno.value , 
+                name : editName.value , 
+                studentClass : studentClass.value , 
+                section : studentSection.value
+            }
+
+            await fetch(`${API}/${ID}` , {
+                method:"PUT" , 
+                headers : {
+                    'Content-type' : 'application/json' 
+                } , 
+                body : JSON.stringify(updateStudent)
+
+            })
+
+
+
+            let modalElement = document.getElementById('editStudent') 
+            let modal = bootstrap.Modal.getInstance(modalElement) 
+            modal.hide() 
+        })
+        
         
     }
 }) 
 
+//save changes --> edit button
 
 
 
@@ -400,13 +436,34 @@ document.addEventListener('click' , async function(event){
 
 document.addEventListener('click' , async function(event){
     if(event.target.classList.contains('deleteBtn')) {
-        // console.log(event.target.dataset.id);
-        let studentDate = await fetch(`${API}?rollno=${event.target.dataset.id}`) 
-        let student = await studentDate.json() 
-        let editrollno = document.getElementById('editRollno')  
-        editrollno.value = event.target.dataset.id
-        console.log("hi" , editrollno.value);
-        
-        editrollno.value = event.target.dataset.id
+        let ID = event.target.dataset.id 
+
+        Swal.fire({
+            title: "Are you sure?",
+            text: "You won't be able to revert this!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Yes, delete it!"
+            }).then(async (result) => {
+            if (result.isConfirmed) {
+                Swal.fire({
+                title: "Deleted!",
+                text: "Your file has been deleted.",
+                icon: "success"
+            });
+            
+            await fetch(`${API}/${ID}` , {
+                method:"DELETE" , 
+            }) 
+
+            }
+            });
     }
 })  
+
+
+window.addEventListener('beforeunload', () => {
+    console.log('PAGE RELOAD');
+});
