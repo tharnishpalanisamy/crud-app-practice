@@ -13,3 +13,15 @@
     color: red;
 }
 
+i{
+    cursor: pointer;
+}
+
+.clicked {
+    color: rgb(13, 110, 253); 
+    transform: scale(1.2); 
+}
+
+.searchInput{
+    transition: 0.7s;
+}

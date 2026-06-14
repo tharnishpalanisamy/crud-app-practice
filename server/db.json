@@ -1,29 +1,158 @@
 {
   "student": [
     {
-      "id": "kSzBv4SneTg",
-      "rollno": "1",
-      "name": "Tharnish"
-    },
-    {
-      "rollno": "2",
-      "name": "Tharnish",
-      "id": "3fzRLGGLLFI"
+      "rollno": "14",
+      "name": "Sanjay",
+      "studentClass": "I",
+      "section": "A",
+      "id": "s1"
     },
     {
       "rollno": "3",
-      "name": "Tharnish",
-      "id": "7Za272x2Yl8"
+      "name": "Farhan",
+      "studentClass": "II",
+      "section": "B",
+      "id": "s2"
     },
     {
-      "rollno": "4",
-      "name": "Tharnish",
-      "id": "vZmIo45_E3A"
+      "rollno": "19",
+      "name": "Bala",
+      "studentClass": "III",
+      "section": "C",
+      "id": "s3"
+    },
+    {
+      "rollno": "7",
+      "name": "Hari",
+      "studentClass": "IV",
+      "section": "A",
+      "id": "s4"
+    },
+    {
+      "rollno": "11",
+      "name": "Deepak",
+      "studentClass": "V",
+      "section": "B",
+      "id": "s5"
+    },
+    {
+      "rollno": "1",
+      "name": "Manoj",
+      "studentClass": "VI",
+      "section": "C",
+      "id": "s6"
+    },
+    {
+      "rollno": "16",
+      "name": "Tharun",
+      "studentClass": "VII",
+      "section": "A",
+      "id": "s7"
     },
     {
       "rollno": "5",
+      "name": "Imran",
+      "studentClass": "VIII",
+      "section": "B",
+      "id": "s8"
+    },
+    {
+      "rollno": "12",
+      "name": "Arun",
+      "studentClass": "IX",
+      "section": "C",
+      "id": "s9"
+    },
+    {
+      "rollno": "20",
+      "name": "Lokesh",
+      "studentClass": "X",
+      "section": "A",
+      "id": "s10"
+    },
+    {
+      "rollno": "8",
+      "name": "Naveen",
+      "studentClass": "I",
+      "section": "B",
+      "id": "s11"
+    },
+    {
+      "rollno": "15",
+      "name": "Yogesh",
+      "studentClass": "II",
+      "section": "C",
+      "id": "s12"
+    },
+    {
+      "rollno": "2",
+      "name": "Gokul",
+      "studentClass": "III",
+      "section": "A",
+      "id": "s13"
+    },
+    {
+      "rollno": "18",
+      "name": "Rahul",
+      "studentClass": "IV",
+      "section": "B",
+      "id": "s14"
+    },
+    {
+      "rollno": "6",
+      "name": "Charan",
+      "studentClass": "V",
+      "section": "C",
+      "id": "s15"
+    },
+    {
+      "rollno": "13",
+      "name": "Karthik",
+      "studentClass": "VI",
+      "section": "A",
+      "id": "s16"
+    },
+    {
+      "rollno": "9",
+      "name": "Vignesh",
+      "studentClass": "VII",
+      "section": "B",
+      "id": "s17"
+    },
+    {
+      "rollno": "4",
+      "name": "Praveen",
+      "studentClass": "VIII",
+      "section": "C",
+      "id": "s18"
+    },
+    {
+      "rollno": "17",
+      "name": "Jagan",
+      "studentClass": "IX",
+      "section": "A",
+      "id": "s19"
+    },
+    {
+      "rollno": "10",
+      "name": "Ezhil",
+      "studentClass": "X",
+      "section": "B",
+      "id": "s20"
+    },
+    {
+      "rollno": "21",
       "name": "Tharnish",
-      "id": "Z-OEDdCL3ZQ"
+      "studentClass": "I",
+      "section": "A",
+      "id": "OPIWVCZ23mk"
+    },
+    {
+      "rollno": "22",
+      "name": "Tharnish",
+      "studentClass": "II",
+      "section": "A",
+      "id": "mXH2vSeOUw0"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
