@@ -273,7 +273,7 @@ filterButton.addEventListener('click' , async function(){
     }
 
 
-    //name 
+    //name by comparing name
     if(nameAscendingFilter) {
         filteredStudents.sort((a,b) =>{
             return a.name.localeCompare(b.name)

@@ -1,13 +1,6 @@
 {
   "student": [
     {
-      "rollno": "7",
-      "name": "Hari Haran",
-      "studentClass": "IV",
-      "section": "A",
-      "id": "s4"
-    },
-    {
       "rollno": "11",
       "name": "Deepak",
       "studentClass": "V",
